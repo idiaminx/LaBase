@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : StylePrecision
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130720
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+    <div id="wrapper">
+    	<div id="page" class="container">
+
+          {% include header.html %}
+          <div id="content">
+            <!--<div id="column1">-->
+              <main class="page-content" aria-label="Content">
+                <div class="wrapper">
+                    {{ content }}
+                </div>
+              </main>
+            <!--</div>-->
+          </div>
+          <div id="sidebar">
+      			<div class="box1">
+              <div id="github-project: LaBase;">
+
+              <div id="layout_wrapper_outer">
+              <div id="layout_wrapper">
+
+                <div id="layout_top">
+
+                  <div id="site_title">
+
+                  	<table width="100%">
+                  		<tr>
+                  			<!--<td width="40%">
+                  				<a href="{{ site.url }}/svenska/"><img src="{{ site.url }}/img/se.png" alt="svenska"/></a>
+                          <a href="{{ site.url }}/"><img src="{{ site.url }}/img/es.png" alt="español"/></a>
+                  			</td>-->
+
+                        <!--<td width="40%"></td>-->
+                  			<td style="margin-bottom:0;" align="right">
+            				<div style="width:350px;height:73px;"><div class="title">
+                      <img src="{{ site.url }}/images/socialbtn.gif">
+                    </div></div></td>
+                      <div id="menu">
+            				<ul id="social_btn" style="padding-top:44px;">
+            					<li>
+            						<div id="fb-root" ></div>
+            						<script>(function(d, s, id) {
+            						  var js, fjs = d.getElementsByTagName(s)[0];
+            						  if (d.getElementById(id)) return;
+            						  js = d.createElement(s); js.id = id;
+            						  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+            						  fjs.parentNode.insertBefore(js, fjs);
+            						}(document, 'script', 'facebook-jssdk'));</script>
+            						<div class="fb-like" data-href="https://www.facebook.com/Labase-1178980955525326/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+            					</li>
+            					<li>
+            						<a href="http://twitter.com/share" data-url="{{ site.url }}" data-counturl="{{ site.url }}" data-text="LaBase | Una base de datos para mantener información actualizada de direcciones de los streams de televisión." class="twitter-share-button" data-count="none" data-via=""></a>
+            						<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            					</li>
+            					<li>
+            						<!-- Place this tag where you want the +1 button to render -->
+            						<g:plusone size="medium" annotation="none" href="https://idiaminx.github.io/labase"></g:plusone>
+
+            						<!-- Place this render call where appropriate -->
+            						<script type="text/javascript">
+            						  (function() {
+            							var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            							po.src = 'https://apis.google.com/js/plusone.js';
+            							var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            						  })();
+            						</script>
+            					</li>
+            					<li>
+            						<!-- Place this tag where you want the su badge to render -->
+            						<su:badge layout="4"></su:badge>
+
+            						<!-- Place this snippet wherever appropriate -->
+            						 <script type="text/javascript">
+            						 (function() {
+            							 var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
+            							  li.src = 'https://platform.stumbleupon.com/1/widgets.js';
+            							  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);
+            						 })();
+            						 </script>
+            					</li>
+            				</ul>
+                  </div>
+            				<!--</div> -->
+            				<div style="clear:both;"></div>
+                  			<!--</td>-->
+                  		</tr>
+                  	</table>
+                  </div></div></div></div></div>
+      				<div class="title">
+      					<h2>Mauris vulputate</h2>
+      				</div>
+      				<ul class="style2">
+      					<li><a href="#">Semper mod quis eget mi dolore</a></li>
+      					<li><a href="#">Quam turpis feugiat sit dolor</a></li>
+      					<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
+      					<li><a href="#">Consequat etiam lorem phasellus</a></li>
+      					<li><a href="#">Semper mod quis eget mi dolore</a></li>
+      					<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+      					<li><a href="#">Semper mod quisturpis nisi</a></li>
+      				</ul>
+      			</div>
+      			<div class="box2">
+      				<div class="title">
+      					<h2>Integer gravida</h2>
+      				</div>
+      				<ul class="style2">
+      					<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+      					<li><a href="#">Ornare in hendrerit in lectus</a></li>
+      					<li><a href="#">Semper mod quis eget mi dolore</a></li>
+      					<li><a href="#">Quam turpis feugiat sit dolor</a></li>
+      					<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
+      					<li><a href="#">Semper mod quisturpis nisi</a></li>
+      					<li><a href="#">Consequat etiam lorem phasellus</a></li>
+      				</ul>
+      					<a href="#" class="icon icon-file-alt button">Read More</a> </div>
+      			</div>
+        </div>
+      </div>
+    </div>
+    <!-- end page -->
+  </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
