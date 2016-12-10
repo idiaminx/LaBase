@@ -17,7 +17,7 @@ title: (LaBase)o0o0o - o0o0o - o0o0o(LaBase)(status. =   21);
 email: idiaminx@gmail.com
 description: "Procesamiento de datos, categorización y elaboración de una `base de datos`. La fuente original de información son las `listas` de canales de televisión aparecidas en diversos foros en especial el foro de listas ruso: `iptv.zone`. `LaBase` sería un almacenamiento de `streams` de canales de televisión que estarìa siempre actualizado con `streams` que funcionen."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://o0o0o.tk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:  idiaminx
 
