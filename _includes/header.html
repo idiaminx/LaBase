@@ -1,0 +1,43 @@
+<div id="header" class="container">
+  <div id="logo">
+    <h1><a href="/">--== LaBase ==--</a></h1>
+  </div>
+  <div id="menu">
+    <ul>
+      <li class="current_page_item"><a href="/">Home</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/fotos">Fotos</a></li>
+      <li><a href="/'acerca de'">Acerca de</a></li>
+      <li><a href="/contact">Contacto</a></li>
+    </ul>
+  </div>
+</div>
+<div id="banner">
+  <div id="slider">
+    <div class="viewer">
+      <div class="reel">
+        <div class="slide"> <img src="/images/pic01.jpg" alt="" /> </div>
+        <div class="slide"> <img src="/images/pic02.jpg" alt="" /> </div>
+        <div class="slide"> <img src="/images/pic03.jpg" alt="" /> </div>
+        <div class="slide"> <img src="/images/pic04.jpg" alt="" /> </div>
+        <div class="slide"> <img src="/images/pic05.jpg" alt="" /> </div>
+        <div class="slide"> <img src="/images/pic06.jpg" alt="" /> </div>
+        <div class="slide"> <img src="/images/pic07.jpg" alt="" /> </div>
+        <div class="slide"> <img src="/images/pic08.jpg" alt="" /> </div>
+        <div class="slide"> <img src="/images/pic09.jpg" alt="" /> </div>
+        <div class="slide"> <img src="/images/pic10.jpg" alt="" /> </div>
+        <div class="slide"> <img src="/images/pic11.jpg" alt="" /> </div>
+        <div class="slide"> <img src="/images/pic12.jpg" alt="" /> </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $('#slider').slidertron({
+      viewerSelector: '.viewer',
+      reelSelector: '.viewer .reel',
+      slidesSelector: '.viewer .reel .slide',
+      advanceDelay: 3000,
+      speed: 'slow'
+    });
+  </script>
+</div>
