@@ -17,11 +17,11 @@ Released   : 20130720
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Fotos</title>
+  <title>PHP Objetos y funciones</title>
   <meta name="description" content="Procesamiento de datos, categorización y elaboración de una `base de datos`. La fuente original de información son las `listas` de canales de televisión apar...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/fotos/">
+  <link rel="canonical" href="http://localhost:4000/php-objects-functions.html">
   <link rel="alternate" type="application/rss+xml" title="La Base - Base de Datos con tv streams" href="/feed.xml">
   <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css' />-->
   <link rel="stylesheet" type="txt/css" href="https://fonts.googleapis.com/css?family=Droid+Serif:bold">
@@ -34,19 +34,22 @@ Released   : 20130720
   <link rel="icon" href="/favicon.ico">
   
   <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>Fotos - La Base - Base de Datos con tv streams</title>
-<meta property="og:title" content="Fotos" />
-<meta name="description" content="Procesamiento de datos, categorización y elaboración de una base de datos. La fuente original de información son las listas de canales de televisión aparecidas en diversos foros en especial el foro de listas ruso: iptv.zone. LaBase sería un almacenamiento de streams de canales de televisión que estarìa siempre actualizado con streams que funcionen." />
-<meta property="og:description" content="Procesamiento de datos, categorización y elaboración de una base de datos. La fuente original de información son las listas de canales de televisión aparecidas en diversos foros en especial el foro de listas ruso: iptv.zone. LaBase sería un almacenamiento de streams de canales de televisión que estarìa siempre actualizado con streams que funcionen." />
-<link rel="canonical" href="http://localhost:4000/fotos/" />
-<meta property="og:url" content="http://localhost:4000/fotos/" />
+<title>PHP Objetos y funciones - La Base - Base de Datos con tv streams</title>
+<meta property="og:title" content="PHP Objetos y funciones" />
+<meta name="description" content="Profundisamos el lenguaje PHP un poco más que los conceptos básicos del primer capítulo, en este caso vamos a hablar de clases y métodos…" />
+<meta property="og:description" content="Profundisamos el lenguaje PHP un poco más que los conceptos básicos del primer capítulo, en este caso vamos a hablar de clases y métodos…" />
+<link rel="canonical" href="http://localhost:4000/php-objects-functions.html" />
+<meta property="og:url" content="http://localhost:4000/php-objects-functions.html" />
 <meta property="og:site_name" content="La Base - Base de Datos con tv streams" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-12-18T07:37:49+01:00" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
-"@type": "WebPage",
-"headline": "Fotos",
-"description": "Procesamiento de datos, categorización y elaboración de una base de datos. La fuente original de información son las listas de canales de televisión aparecidas en diversos foros en especial el foro de listas ruso: iptv.zone. LaBase sería un almacenamiento de streams de canales de televisión que estarìa siempre actualizado con streams que funcionen.",
-"url": "http://localhost:4000/fotos/"}</script>
+"@type": "BlogPosting",
+"headline": "PHP Objetos y funciones",
+"datePublished": "2016-12-18T07:37:49+01:00",
+"description": "Profundisamos el lenguaje PHP un poco más que los conceptos básicos del primer capítulo, en este caso vamos a hablar de clases y métodos…",
+"url": "http://localhost:4000/php-objects-functions.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -106,9 +109,122 @@ Released   : 20130720
                 <div class="wrapper">
 
 
-                    <p><code class="highlighter-rouge">¡Hola a todos!</code><br /><br /></p>
-<center><img src="/images/elmangango.gif" /></center>
-<center>o0o0o - o0o0o - o0o0o</center>
+                    <html>
+
+<style>
+#menu a {
+	font-size: 0.9em;
+}
+
+h1, h2, h3 {
+	color: #59B860;
+}
+
+menu {
+	font-size: 0.9em;
+}
+
+body {
+	font: 400 16px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #111;
+	-webkit-text-size-adjust: 100%;
+	-moz-font-feature-settings: "kern" 1;
+	font-feature-settings: "kern" 1;
+	font-kerning: normal;
+}
+</style>
+
+<body>
+<div class="box1">
+  <div id="github-project: LaBase;">
+
+  <div id="layout_wrapper_outer">
+  <div id="layout_wrapper">
+
+    <div id="layout_top">
+
+      <div id="site_title">
+
+        <table width="100%">
+          <tr>
+            <!--<td width="40%">
+              <a href="http://localhost:4000/svenska/"><img src="http://localhost:4000/img/se.png" alt="svenska"/></a>
+              <a href="http://localhost:4000/"><img src="http://localhost:4000/img/es.png" alt="español"/></a>
+            </td>-->
+
+            <!--<td width="40%"></td>-->
+            <td style="margin-bottom:0;" align="right">
+        <div style="width:350px;height:73px;"><div class="title">
+          <img src="/images/socialbtn.gif" />
+        </div></div></td>
+          <div id="menu">
+        <ul id="social_btn" style="padding-top:44px;">
+          <li>
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="https://www.facebook.com/Labase-1178980955525326/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+          </li>
+          <li>
+            <a href="http://twitter.com/share" data-url="/" data-counturl="/" data-text="LaBase | Una base de datos para mantener información actualizada de direcciones de los streams de televisión." class="twitter-share-button" data-count="none" data-via=""></a>
+            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+          </li>
+          <li>
+            <!-- Place this tag where you want the +1 button to render -->
+            <g:plusone size="medium" annotation="none" href="/"></g:plusone>
+
+            <!-- Place this render call where appropriate -->
+            <script type="text/javascript">
+              (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/plusone.js';
+              var s = document.getElementsByTagName('script')[0]; s.Node.insertBefore(po, s);
+              })();
+            </script>
+          </li>
+          <li>
+            <!-- Place this tag where you want the su badge to render -->
+            <su:badge layout="4"></su:badge>
+
+            <!-- Place this snippet wherever appropriate -->
+             <script type="text/javascript">
+             (function() {
+               var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
+                li.src = 'https://platform.stumbleupon.com/1/widgets.js';
+                var s = document.getElementsByTagName('script')[0]; s.Node.insertBefore(li, s);
+             })();
+             </script>
+          </li>
+        </ul>
+      </div>
+        <!--</div> -->
+        <div style="clear:both;"></div>
+            <!--</td>-->
+          </tr>
+        </table>
+      </div></div></div></div></div></div>
+      </body>
+      </html>
+
+<h1 id="php-objetos-y-funciones">PHP Objetos y Funciones</h1>
+<p><br /></p>
+
+<p>La programación se vuelve tediosa cuando tenemos que reescribir un número de veces porciones muy similares de código, para eso están las funciones y los objetos. Las funciones son un conjunto de instrucciones que actúan implementando alguna función en el programa. Cada vez que necesitamos ejecutar esas instrucciones invocamos el nombre de la función.
+PHP ostenta una gran cantidad de funciones precompiladas como la función:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">"print is a pseudo-function"</span><span class="p">);</span>
+<span class="cp">?&gt;</span></code></pre></figure>
+
+<p>La característica de una función es que usa paréntises para pasarle los argumentos a la función, sin embargo print es una pseudo-función que muestra texto en la pantalla y es la única función que no requiere paréntesis.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">print "print doesen't require perentheses"</code></pre></figure>
+
 
 
 
